@@ -1,9 +1,9 @@
 
-export function Journal(journalObject){
+export const JournalEntryComponent = (entry) => {
     return `
-    <section id="entry--${journalObject.id}" class="journalEntry>
-    <p>${journalObject.date}</p>
-    <p>${journalObject.entry}</p>
+    <section id="entry--${entry.id}" class="journalEntry">
+    <p>${entry.date}</p>
+    <p>${entry.entry}</p>
     </section>
     `
 }

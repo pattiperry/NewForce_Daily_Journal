@@ -1,5 +1,5 @@
 console.log("Welcome to the main module")
 
-import {JournalEntryList} from './JournalEntryList.js';
+import {EntryListComponent} from './JournalEntryList.js';
 
-console.log(JournalEntryList())
+EntryListComponent()

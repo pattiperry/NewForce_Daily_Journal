@@ -2,22 +2,22 @@
 
 
 import {useJournalEntries} from "./JournalDataProvider.js"
-import {Journal} from "./Journal.js"
+import {JournalEntryComponent} from "./JournalEntry.js"
 
-//DOM reference to where all entries will be rendered
-let entryLog = document.querySelector("#entry-log")
 
-export function JournalEntryList(){
-    //use the journal entry data from the data provider component
+let entryLog = document.querySelector("#entry")
+export function EntryListComponent() {
+        
     const allTheEntries = useJournalEntries();
 
-    for (let i=0; i<allTheEntries.length; i++){
- //---------------       //i need something here += Journal(allTheEntries[i]);
-    }
+    let journalHTMLString = "";
 
-//----------i need to finish my console log    console.log();
+        for(let i=0; i<allTheEntries.length; i++) {
+            journalHTMLString += JournalEntryComponent(allTheEntries[i]);
 
- //------i need to finish this line    journalContainer.innerHTML = '<h2>Journal Entries By Date</h2>${}'
+        }
 
+    console.log(journalHTMLString);
+
+    entryLog.innerHTML = journalHTMLString
 }
-

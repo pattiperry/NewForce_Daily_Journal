@@ -18,8 +18,8 @@ const journal = [
         date: "01/12/2021",
         concept: "Javascript",
         entry: "We learned how to print things to the DOM, using import/export.",
-        mood: "Optimistic"
-    }
+        mood: "Optimistic",
+    },
     {
         id: 4,
         date: "01/13/2021",
